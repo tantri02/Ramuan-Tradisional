@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Buku Resep Ramuan Tradisional</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdf6e3;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #5e412f;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    p.subjudul {
+      font-style: italic;
+      margin-top: 5px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .resep {
+      background-color: #fff8dc;
+      border: 1px solid #e0d6b4;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    .resep img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .resep h2 {
+      margin-top: 0;
+      color: #5e412f;
+    }
+
+    .copy-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      padding: 6px 10px;
+      background-color: #8f5e3a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9em;
+    }
+
+    .copy-btn:hover {
+      background-color: #70452c;
+    }
+
+    footer {
+      background-color: #5e412f;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Buku Resep Ramuan Tradisional</h1>
+  <p class="subjudul">Kumpulan Resep Ramuan Tradisional Mujarab</p>
+</header>
+
+<div class="container">
+
+  <div class="resep" id="resep1">
+    <button class="copy-btn" onclick="salinResep('resep1')">Salin Resep</button>
+    <img src="ramuan_batuk_herbal.jpg" alt="Ramuan Batuk Herbal" />
+    <h2>1. Ramuan Batuk Herbal</h2>
+    <p><strong>Bahan:</strong> Jahe, madu, jeruk nipis.</p>
+    <p><strong>Cara membuat:</strong> Rebus jahe, dinginkan sedikit, tambahkan madu dan jeruk nipis. Minum selagi hangat.</p>
+  </div>
+
+  <div class="resep" id="resep2">
+    <button class="copy-btn" onclick="salinResep('resep2')">Salin Resep</button>
+    <img src="ramuan_penambah_stamina.jpg" alt="Ramuan Penambah Stamina" />
+    <h2>2. Ramuan Penambah Stamina</h2>
+    <p><strong>Bahan:</strong> Temulawak, kunyit, gula aren.</p>
+    <p><strong>Cara membuat:</strong> Rebus temulawak dan kunyit, tambahkan gula aren. Saring dan minum 2x sehari.</p>
+  </div>
+
+  <div class="resep" id="resep3">
+    <button class="copy-btn" onclick="salinResep('resep3')">Salin Resep</button>
+    <img src="ramuan_sakit_perut.jpg" alt="Ramuan Sakit Perut" />
+    <h2>3. Ramuan Sakit Perut</h2>
+    <p><strong>Bahan:</strong> Daun jambu biji muda, garam.</p>
+    <p><strong>Cara membuat:</strong> Tumbuk daun jambu, seduh dengan air hangat dan garam sedikit. Minum perlahan.</p>
+  </div>
+
+  <div class="resep" id="resep4">
+    <button class="copy-btn" onclick="salinResep('resep4')">Salin Resep</button>
+    <img src="ramuan_masuk_angin.jpg" alt="Ramuan Masuk Angin" />
+    <h2>4. Ramuan Masuk Angin</h2>
+    <p><strong>Bahan:</strong> Kencur, garam, air hangat.</p>
+    <p><strong>Cara membuat:</strong> Parut kencur, campur air hangat dan garam. Minum selagi hangat.</p>
+  </div>
+
+  <div class="resep" id="resep5">
+    <button class="copy-btn" onclick="salinResep('resep5')">Salin Resep</button>
+    <img src="ramuan_penurun_demam.jpg" alt="Ramuan Penurun Demam" />
+    <h2>5. Ramuan Penurun Demam</h2>
+    <p><strong>Bahan:</strong> Daun sambiloto, air.</p>
+    <p><strong>Cara membuat:</strong> Rebus daun sambiloto, saring, minum 2x sehari saat demam.</p>
+  </div>
+
+  <div class="resep" id="resep6">
+    <button class="copy-btn" onclick="salinResep('resep6')">Salin Resep</button>
+    <img src="ramuan_rambut_rontok.jpg" alt="Ramuan Rambut Rontok" />
+    <h2>6. Ramuan Rambut Rontok</h2>
+    <p><strong>Bahan:</strong> Lidah buaya segar.</p>
+    <p><strong>Cara membuat:</strong> Ambil gel lidah buaya, oles ke kulit kepala, diamkan 15 menit lalu bilas.</p>
+  </div>
+
+  <div class="resep" id="resep7">
+    <button class="copy-btn" onclick="salinResep('resep7')">Salin Resep</button>
+    <img src="ramuan_pencernaan_sehat.jpg" alt="Ramuan Pencernaan Sehat" />
+    <h2>7. Ramuan Pencernaan Sehat</h2>
+    <p><strong>Bahan:</strong> Buah mengkudu matang.</p>
+    <p><strong>Cara membuat:</strong> Peras buah mengkudu, saring airnya, minum 1x sehari.</p>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2025 Buku Ramuan Tradisional | Dibuat oleh Anggita
+</footer>
+
+<script>
+  function salinResep(id) {
+    const resep = document.getElementById(id);
+    let text = resep.innerText;
+    navigator.clipboard.writeText(text).then(function () {
+      alert("Resep berhasil disalin!");
+    }, function (err) {
+      alert("Gagal menyalin: " + err);
+    });
+  }
+</script>
+
+</body>
+</html>
